@@ -1,7 +1,7 @@
 import { Scene, Physics, Input, Math as PhaserMath } from "phaser";
 import Level from "./level/level.js";
 import { io } from "socket.io-client";
-const socketUrl = "http://localhost:3001";
+const socketUrl = "https://coreproject-6.onrender.com";
 export default class CommonScene extends Scene {
   constructor() {
     super("CommonScene");
@@ -107,7 +107,7 @@ export default class CommonScene extends Scene {
     // layer3.setScale(1, 1).setOrigin(0, 0);
     // layer3.setCollisionByProperty({ collider: true });
 
-    this.socket = io("http://localhost:3001", {
+    this.socket = io("https://coreproject-6.onrender.com", {
       withCredentials: false,
     });
     this.player = this.physics.add
