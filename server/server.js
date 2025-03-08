@@ -8,14 +8,14 @@ const httpServer = http.createServer(app);
 
 // Allow CORS for all requests
 app.use(cors({
-  origin: "http://localhost:3000", // Replace with the origin of your frontend (e.g., http://localhost:3000)
+  origin: "https://core-project-xi.vercel.app", // Replace with the origin of your frontend (e.g., http://localhost:3000)
   methods: ["GET", "POST"],
   credentials: true, // Allow cookies to be sent with the request
 }));
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000", // Same as above, allow the frontend to connect
+    origin: "https://core-project-xi.vercel.app", // Same as above, allow the frontend to connect
     methods: ["GET", "POST"],
     credentials: true,
   },
