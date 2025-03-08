@@ -81,7 +81,7 @@ node server.js
 
 ### Video Demonstration
 
-[![Coreverse Battle Demo](<!-- Add YouTube thumbnail URL -->)](<!-- Add YouTube video URL -->)
+[![Coreverse Battle Demo](https://youtu.be/1Rzv0Civ6jE)
 
 *Click to watch demo video*
 
