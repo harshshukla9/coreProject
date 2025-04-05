@@ -8,14 +8,14 @@ require("dotenv").config();
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
 // Define Core DAO Testnet
-const coreTestnet = defineChain({
-  id: 1115, // Chain ID for Core Testnet
-  name: "Core DAO Testnet",
-  rpcUrl: "https://rpc.test.btcs.network",
-  explorerUrl: "https://scan.test.btcs.network",
+const coreMainnet = defineChain({
+  id: 1116, // Chain ID for Core Testnet
+  name: "Core DAO ",
+  rpcUrl: "	https://rpc.coredao.org/",
+  explorerUrl: "https://scan.coredao.org",
   currency: {
-    name: "tCORE",
-    symbol: "tCORE",
+    name: "CORE",
+    symbol: "CORE",
     decimals: 18,
   },
   testnet: true,
@@ -31,8 +31,8 @@ const metadata = {
 export const walletModal = createAppKit({
   adapters: [new EthersAdapter()],
   metadata,
-  networks: [coreTestnet], // Added Core DAO Testnet
-  defaultNetwork: coreTestnet, // Set Core Testnet as default
+  networks: [coreMainnet], // Added Core DAO Testnet
+  defaultNetwork: coreMainnet, // Set Core Testnet as default
   projectId,
   allowUnsupportedChain: true,
   enableWalletConnect: true,

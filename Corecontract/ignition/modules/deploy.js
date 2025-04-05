@@ -145,3 +145,5 @@ main()
     console.error(error);
     process.exit(1);
   });
+
+  // on modules folder we have to deploy npx hardhat run deploy.js --network core_testnet

@@ -13,9 +13,9 @@ module.exports = {
     },
   },
   networks: {
-    core_testnet: {
-      url: "https://rpc.test.btcs.network",
-      chainId: 1115,
+    core_mainnet: {
+      url: "https://rpc.coredao.org/",
+      chainId: 1116,
       accounts: [PrivateKey],
       gas: "auto",
       gasPrice: "auto",

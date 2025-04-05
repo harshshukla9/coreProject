@@ -11,8 +11,8 @@ const networkInfo = {
     // Local
     rpc: "http://127.0.0.1:8545/",
   },
-  1115 :{
-    rpc:"https://rpc.test.btcs.network"
+  1116 :{
+    rpc:"	https://rpc.coredao.org"
   }
 };
 
